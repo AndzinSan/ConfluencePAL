@@ -35,10 +35,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
 				<description>Cover image</description>
-				<posx>20</posx>
-				<posy>45</posy>
-				<width>130</width>
-				<height>295</height>
+				<posx>10</posx>
+				<posy>25</posy>
+				<width>140</width>
+				<height>320</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				<bordertexture border="8">ThumbBorder.png</bordertexture>
@@ -46,40 +46,40 @@
 			</control>
 			<control type="label">
 				<description>Album Label</description>
-				<posx>170</posx>
-				<posy>265</posy>
-				<height>25</height>
-				<width>1000</width>
+				<posx>160</posx>
+				<posy>220</posy>
+				<height>30</height>
+				<width>600</width>
 				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font16</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>170</posx>
-				<posy>285</posy>
-				<height>30</height>
-				<width>1000</width>
+				<posx>160</posx>
+				<posy>250</posy>
+				<height>45</height>
+				<width>600</width>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13_title</font>
+				<font>font30_title</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Time Label</description>
-				<posx>170</posx>
-				<posy>310</posy>
-				<height>30</height>
+				<posx>160</posx>
+				<posy>300</posy>
+				<height>45</height>
 				<width>300</width>
 				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -436,7 +436,7 @@
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>20</onup>
-			<ondown>608</ondown>
+			<ondown>603</ondown>
 			<visible>false</visible>
 		</control>
 		<control type="group">
@@ -486,7 +486,7 @@
 						<label>-</label>
 						<texturefocus>OSDPrevTrackFO.png</texturefocus>
 						<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
-						<onleft>608</onleft>
+						<onleft>607</onleft>
 						<onright>602</onright>
 						<onup>9003</onup>
 						<ondown>9000</ondown>
@@ -577,7 +577,7 @@
 						<label>-</label>
 						<texturefocus>OSDChannelUPFO.png</texturefocus>
 						<texturenofocus>OSDChannelUPNF.png</texturenofocus>
-						<onleft>608</onleft>
+						<onleft>607</onleft>
 						<onright>602</onright>
 						<onup>9003</onup>
 						<ondown>9000</ondown>
@@ -669,7 +669,7 @@
 				<textureradiofocus>GoFullscreen.png</textureradiofocus>
 				<textureradionofocus>GoFullscreen.png</textureradionofocus>
 				<onleft>606</onleft>
-				<onright>608</onright>
+				<onright>601</onright>
 				<onup>9003</onup>
 				<ondown>9000</ondown>
 				<enable>Player.HasMedia</enable>
@@ -768,8 +768,7 @@
 				<height>60</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup condition="System.HasAddon(script.globalsearch)">608</onup>
-				<onup condition="!System.HasAddon(script.globalsearch)">603</onup>
+				<onup>603</onup>
 				<ondown>9001</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -1011,15 +1010,15 @@
 			</control>
 		</control>
 		<control type="group" id="10">
-			<posx>20</posx>
-			<posy>75r</posy>
+			<posx>10</posx>
+			<posy>65r</posy>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button" id="20">
 				<description>Power push button</description>
-				<posx>75</posx>
+				<posx>65</posx>
 				<posy>0</posy>
-				<width>65</width>
-				<height>65</height>
+				<width>55</width>
+				<height>55</height>
 				<label>31003</label>
 				<font>-</font>
 				<aligny>-</aligny>
@@ -1029,14 +1028,15 @@
 				<onleft>21</onleft>
 				<onright>21</onright>
 				<onup>9002</onup>
-				<ondown>9003</ondown>
+				<ondown condition="Player.HasVideo">603</ondown>
+			  <ondown condition="!Player.HasVideo">9003</ondown>
 			</control>
 			<control type="image">
 				<description>Power Icon</description>
-				<posx>80</posx>
+				<posx>70</posx>
 				<posy>5</posy>
-				<width>55</width>
-				<height>55</height>
+				<width>45</width>
+				<height>45</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_power.png</texture>
 			</control>
@@ -1044,8 +1044,8 @@
 				<description>Favourites push button</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>65</width>
-				<height>65</height>
+				<width>55</width>
+				<height>55</height>
 				<label>1036</label>
 				<font>-</font>
 				<aligny>-</aligny>
@@ -1061,8 +1061,8 @@
 				<description>Favourites Icon</description>
 				<posx>5</posx>
 				<posy>5</posy>
-				<width>55</width>
-				<height>55</height>
+				<width>45</width>
+				<height>45</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_favourites.png</texture>
 			</control>

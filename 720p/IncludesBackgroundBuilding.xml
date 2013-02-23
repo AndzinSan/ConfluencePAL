@@ -26,8 +26,8 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>900</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
+			<height>620</height>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>

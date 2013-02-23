@@ -328,6 +328,11 @@
 				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 				<visible>Player.Seeking</visible>
 			</control>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Window.IsVisible(FullScreenVideo)</visible>
 			<include>Clock</include>
 		</control>
 	</controls>

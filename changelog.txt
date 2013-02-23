@@ -1,3 +1,9 @@
+[B]0.2[/B]
+- Fixed size of power button and favourite button on Home Screen
+- Fixed bad version in addon.xml
+- Added SystemTime information on VideoOSD
+- Changed scalling of CommonBackground for better 4:3 display
+
 [B]0.1[/B]
 
 - Initial Commit to the Git

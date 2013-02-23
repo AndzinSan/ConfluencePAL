@@ -455,5 +455,11 @@
 				<animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
 			</control>
 		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Window.IsVisible(FullScreenVideo)</visible>
+			<include>Clock</include>
+		</control>
 	</controls>
  </window>
