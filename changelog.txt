@@ -1,3 +1,13 @@
+[B]0.2.1[/B]
+- Fixed DialogAddonInfo.xml
+- Fixed addon dialog info and addon settings
+- Added XBian config into the system configuration menu
+- Changed addon icon
+- Changed pagination layout
+- Finished weather
+- Finished CommonRootView
+- Finished FullWidthList and allowed in videos
+
 [B]0.2[/B]
 - Fixed size of power button and favourite button on Home Screen
 - Fixed bad version in addon.xml

@@ -544,3 +544,7 @@ msgstr "Mapa a upozornenia"
 msgctxt "#32000"
 msgid "SysInfo"
 msgstr "SysInfo"
+
+msgctxt "#33000"
+msgid "Xbian"
+msgstr "[B]KONFIGURÁCIA XBIANU[/B][CR][CR]Ak máte otázky,[CR]opýtajte sa na www.xbian.org"

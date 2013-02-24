@@ -10,7 +10,7 @@
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
 			<include>CommonRootView</include> <!-- view id = 50 ZOZNAM-->
-			<!-- <include>FullWidthList</include> <!-- view id = 51 VELKY ZOZNAM-->
+			<include>FullWidthList</include> <!-- view id = 51 VELKY ZOZNAM-->
 			<!-- <include>ThumbnailView</include> <!-- view id = 500 -->
 			<!-- <include>PosterWrapView</include> <!-- view id = 501 -->
 			<!-- <include>PosterWrapView2_Fanart</include> <!-- view id = 508 -->

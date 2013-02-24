@@ -27,16 +27,21 @@
 			<size>25</size>
 		</font>
 	 	<font>
-			<name>font30</name>
-			<filename>Roboto-Regular.ttf</filename>
-			<size>30</size>
-		</font>
-	 	<font>
 			<name>fontContextMenu</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>26</size>
 		</font>
 		
+		<font>
+			<name>font28</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+	 	<font>
+			<name>font30</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>30</size>
+		</font>
 		<font>
 			<name>font32</name>
 			<filename>Roboto-Regular.ttf</filename>

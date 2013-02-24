@@ -4,7 +4,7 @@
 		<system>1</system>
 		<posx>50</posx>
 		<posy>60</posy>
-		<origin x="185" y="10">!IsEmpty(ListItem.Property(Addon.broken))</origin>
+		<origin x="50" y="10">!IsEmpty(ListItem.Property(Addon.broken))</origin>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -192,7 +192,7 @@
 					<description>Summary Value</description>
 					<posx>160</posx>
 					<posy>120</posy>
-					<width>440</width>
+					<width>350</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
 					<align>left</align>
@@ -204,7 +204,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>160</posy>
-					<width>600</width>
+					<width>520</width>
 					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
@@ -224,7 +224,7 @@
 					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
-						<posx>610</posx>
+						<posx>510</posx>
 						<posy>170</posy>
 						<width>300</width>
 						<height>25</height>
@@ -238,7 +238,7 @@
 						<description>Description</description>
 						<posx>10</posx>
 						<posy>195</posy>
-						<width>600</width>
+						<width>500</width>
 						<height>160</height>
 						<font>font14</font>
 						<align>justify</align>
@@ -264,8 +264,8 @@
 					<control type="label">
 						<description>Disclaimer txt</description>
 						<posx>0</posx>
-						<posy>370</posy>
-						<width>600</width>
+						<posy>367</posy>
+						<width>500</width>
 						<height>25</height>
 						<label>$LOCALIZE[24052]</label>
 						<align>left</align>
@@ -276,9 +276,9 @@
 					<control type="textbox">
 						<description>Disclaimer</description>
 						<posx>10</posx>
-						<posy>395</posy>
-						<width>600</width>
-						<height>40</height>
+						<posy>392</posy>
+						<width>500</width>
+						<height>55</height>
 						<font>font14</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
@@ -290,7 +290,7 @@
 					<visible>IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
-						<posx>610</posx>
+						<posx>510</posx>
 						<posy>170</posy>
 						<width>300</width>
 						<height>25</height>
@@ -304,7 +304,7 @@
 						<description>Description</description>
 						<posx>10</posx>
 						<posy>195</posy>
-						<width>600</width>
+						<width>500</width>
 						<height>250</height>
 						<font>font14</font>
 						<align>justify</align>
@@ -391,13 +391,13 @@
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
 				<posx>0</posx>
-				<posy>600</posy>
+				<posy>595</posy>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>920</width>
-					<height>100</height>
+					<width>800</width>
+					<height>115</height>
 					<texture border="20">OverlayDialogBackground.png</texture>
 				</control>
 				<control type="image">
@@ -412,9 +412,9 @@
 					<description>header label</description>
 					<posx>100</posx>
 					<posy>15</posy>
-					<width>800</width>
+					<width>690</width>
 					<height>25</height>
-					<font>font13_title</font>
+					<font>font14_title</font>
 					<label>24096</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -424,14 +424,15 @@
 				<control type="textbox">
 					<description>Reason label</description>
 					<posx>100</posx>
-					<posy>35</posy>
-					<width>800</width>
-					<height>50</height>
+					<posy>44</posy>
+					<width>690</width>
+					<height>60</height>
 					<font>font14</font>
 					<label>$INFO[ListItem.Property(Addon.broken)]</label>
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 		</control>

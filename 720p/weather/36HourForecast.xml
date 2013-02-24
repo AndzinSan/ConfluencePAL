@@ -17,10 +17,10 @@
 			<control type="label">
 				<description>header label</description>
 				<posx>20</posx>
-				<posy>13</posy>
-				<width>610</width>
-				<height>30</height>
-				<font>font13_title</font>
+				<posy>7</posy>
+				<width>450</width>
+				<height>40</height>
+				<font>font16_title</font>
 				<label>31901</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -50,9 +50,9 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>5</posy>
-						<width>600</width>
+						<width>445</width>
 						<height>30</height>
-						<font>font13_title</font>
+						<font>font14_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -60,7 +60,7 @@
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>10</posy>
+						<posy>0</posy>
 						<width>120</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
@@ -69,33 +69,33 @@
 					<control type="label">
 						<posx>120</posx>
 						<posy>40</posy>
-						<width>100</width>
+						<width>290</width>
 						<height>40</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),[B] ,[/B]]</label>
+						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<posx>590</posx>
-						<posy>60</posy>
-						<width>390</width>
+						<posx>120</posx>
+						<posy>80</posy>
+						<width>290</width>
 						<height>20</height>
-						<font>font12</font>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
+						<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908]:[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
-						<posy>110</posy>
-						<width>590</width>
-						<height>70</height>
-						<font>font12</font>
+						<posy>100</posy>
+						<width>445</width>
+						<height>80</height>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -104,7 +104,7 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>180</posy>
-						<width>650</width>
+						<width>445</width>
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
@@ -115,9 +115,9 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>5</posy>
-						<width>600</width>
+						<width>445</width>
 						<height>30</height>
-						<font>font13_title</font>
+						<font>font14_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -125,7 +125,7 @@
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>10</posy>
+						<posy>0</posy>
 						<width>120</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
@@ -134,33 +134,33 @@
 					<control type="label">
 						<posx>120</posx>
 						<posy>40</posy>
-						<width>100</width>
+						<width>290</width>
 						<height>40</height>
-						<font>font13_title</font>
+						<font>font14_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),[B] ,[/B]]</label>
+						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<posx>590</posx>
-						<posy>60</posy>
-						<width>390</width>
+						<posx>120</posx>
+						<posy>80</posy>
+						<width>290</width>
 						<height>20</height>
-						<font>font12</font>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
-						<posy>110</posy>
-						<width>590</width>
-						<height>70</height>
-						<font>font12</font>
+						<posy>100</posy>
+						<width>445</width>
+						<height>80</height>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -169,7 +169,7 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>180</posy>
-						<width>650</width>
+						<width>445</width>
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
@@ -180,9 +180,9 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>5</posy>
-						<width>600</width>
+						<width>445</width>
 						<height>30</height>
-						<font>font13_title</font>
+						<font>font14_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -190,7 +190,7 @@
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>10</posy>
+						<posy>0</posy>
 						<width>120</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
@@ -199,33 +199,33 @@
 					<control type="label">
 						<posx>120</posx>
 						<posy>40</posy>
-						<width>100</width>
+						<width>290</width>
 						<height>40</height>
-						<font>font13_title</font>
+						<font>font14_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),[B] ,[/B]]</label>
+						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<posx>590</posx>
-						<posy>60</posy>
+						<posx>120</posx>
+						<posy>80</posy>
 						<width>390</width>
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
-						<posy>110</posy>
-						<width>590</width>
-						<height>70</height>
-						<font>font12</font>
+						<posy>100</posy>
+						<width>445</width>
+						<height>100</height>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
