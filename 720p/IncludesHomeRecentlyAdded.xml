@@ -354,7 +354,7 @@
 							<width>220</width>
 							<height>230</height>
 							<aspectratio>scale</aspectratio>
-							<texture background="false" transparent="0">folder-focus.png</texture>
+							<texture background="true" transparent="1">GlassOverlay.png</texture>
 							<bordertexture border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<visible>Control.HasFocus(8001)</visible>

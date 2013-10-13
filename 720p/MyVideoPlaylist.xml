@@ -20,16 +20,16 @@
 			<description>Section header image</description>
 			<posx>20</posx>
 			<posy>3</posy>
-			<width>35</width>
-			<height>35</height>
+			<width>55</width>
+			<height>55</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_video.png</texture>
 		</control>
 		<control type="grouplist">
-			<posx>65</posx>
+			<posx>85</posx>
 			<posy>5</posy>
-			<width>1000</width>
-			<height>30</height>
+			<width>900</width>
+			<height>50</height>
 			<orientation>horizontal</orientation>
 			<align>left</align>
 			<itemgap>5</itemgap>
@@ -44,13 +44,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>-250</posx>
+			<posx>-350</posx>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
 				<posx>0</posx>
-				<posy>110</posy>
-				<width>250</width>
-				<height>600</height>
+				<posy>10</posy>
+				<width>350</width>
+				<height>680</height>
 				<onleft>9000</onleft>
 				<onright>50</onright>
 				<onback>50</onback>
@@ -58,9 +58,9 @@
 				<ondown>9000</ondown>
 				<itemgap>0</itemgap>
 				<control type="label" id="200">
-					<width>250</width>
-					<height>35</height>
-					<font>font12</font>
+					<width>350</width>
+					<height>45</height>
+					<font>font16</font>
 					<label>31006</label>
 					<textcolor>blue</textcolor>
 					<align>center</align>
@@ -68,14 +68,14 @@
 				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<textwidth>235</textwidth>
+					<textwidth>335</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 				</control>
 				<control type="label" id="201">
-					<width>250</width>
-					<height>35</height>
-					<font>font12</font>
+					<width>350</width>
+					<height>45</height>
+					<font>font16</font>
 					<label>31026</label>
 					<textcolor>blue</textcolor>
 					<align>center</align>
@@ -88,21 +88,21 @@
 				</control>
 				<control type="button" id="26">
 					<description>Repeat button</description>
-					<textwidth>235</textwidth>
+					<textwidth>335</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 				</control>
 				<control type="button" id="21">
 					<description>Save button</description>
 					<label>190</label>
-					<textwidth>235</textwidth>
+					<textwidth>335</textwidth>
 					<include>ButtonCommonValues</include>
 				</control>
 				<control type="button" id="22">
 					<description>Clear button</description>
 					<label>192</label>
 					<onclick>ReplaceWindow(Videos)</onclick>
-					<textwidth>235</textwidth>
+					<textwidth>335</textwidth>
 					<include>ButtonCommonValues</include>
 				</control>
 				<include>CommonNowPlaying_Controls</include>

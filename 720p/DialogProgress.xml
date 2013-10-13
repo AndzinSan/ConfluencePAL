@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>95</posx>
+		<posx>145</posx>
 		<posy>230</posy>
 	</coordinates>
 	<include>dialogeffect</include>
@@ -66,35 +66,35 @@
 			<posx>30</posx>
 			<posy>70</posy>
 			<width>550</width>
-			<height>40</height>
+			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>-</label>
 			<haspath>true</haspath>
-			<font>font16</font>
+			<font>font14</font>
 		</control>
 		<control type="label" id="3">
 			<description>dialog line 2</description>
 			<posx>30</posx>
-			<posy>105</posy>
+			<posy>95</posy>
 			<width>550</width>
-			<height>40</height>
+			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>-</label>
-			<font>font16</font>
+			<font>font14</font>
 			<haspath>true</haspath>
 		</control>
 		<control type="label" id="4">
 			<description>dialog line 3</description>
 			<posx>30</posx>
-			<posy>140</posy>
+			<posy>120</posy>
 			<width>550</width>
-			<height>40</height>
+			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>-</label>
-			<font>font16</font>
+			<font>font14</font>
 			<haspath>true</haspath>
 		</control>
 		<control type="progress">

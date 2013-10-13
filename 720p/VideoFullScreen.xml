@@ -40,20 +40,20 @@
 				<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
-			<!-- <control type="label" id="1">
-				<description>Clock label</description>
-				<posx>700</posx>
-				<posy>5</posy>
-				<width>800</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font40_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[System.Time]</label>
-				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
-			</control>-->
+<control type="label" id="1">
+		<description>Clock label</description>
+		<posx>20r</posx>
+		<posy>3</posy>
+		<width>200</width>
+		<height>50</height>
+		<align>right</align>
+		<aligny>center</aligny>
+		<font>font45caps_title</font>
+		<textcolor>white</textcolor>
+		<shadowcolor>black</shadowcolor>
+		<label>$INFO[System.Time]</label>
+		
+	</control>
 			<control type="image" id="1">
 				<posx>0</posx>
 				<posy>230r</posy>
@@ -186,7 +186,7 @@
 					<font>font16</font>
 					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
-					<visible>!Window.IsVisible(VideoOSD) + !VideoPlayer.Content(LiveTV)</visible>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
 				</control>
 				<control type="label" id="1">

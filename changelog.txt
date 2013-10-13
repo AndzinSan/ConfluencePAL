@@ -1,3 +1,28 @@
+[B]0.3[/B]
+- Fixed some dialog sizes and font sizes in various windows
+- Fixed positions of elements while playing TV Shows
+  and displaying homescreen in Home.xml
+- Added clock in VideoFullScreen.xml
+- Changed WindowTitleCommons include for less and better info
+  (now displaying "Movies", "Series" or "Series - Series name"
+  instead of "Video - Name" or "Video - Series Name")
+- Finished ThumbnailView and allowed in videos
+- Finished PosterWrapView and allowed in videos
+- Finished WideIconView and allowed in videos
+- Finished DialogKaiToast.xml
+- Finished DialogExtendedProgressBar.xml
+- Finished DialogFileStacking.xml
+- Finished DialogBusy.xml
+- Finished DialogAddonSettings.xml
+- Finished DialogProgress.xml
+- Finished DialogSelect.xml
+- Finished DialogYesNo.xml
+- Finished FileBrowser.xml
+- Finished FileManager.xml
+- Finished MyVideoPlaylist.xml
+- Finished VideoOSDBookmarks.xml
+- VideoOSDSettings.xml
+
 [B]0.2.1[/B]
 - Fixed DialogAddonInfo.xml
 - Fixed addon dialog info and addon settings

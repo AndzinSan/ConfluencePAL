@@ -372,7 +372,7 @@
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>20</posx>
+					<posx>10</posx>
 					<posy>225</posy>
 					<width>180</width>
 					<height>120</height>
@@ -383,40 +383,40 @@
 				</control>
 				<control type="label">
 					<description>TV Show Season Ep Label</description>
-					<posx>210</posx>
-					<posy>265</posy>
-					<height>25</height>
-					<width>1000</width>
+					<posx>200</posx>
+					<posy>220</posy>
+					<height>45</height>
+					<width>600</width>
 					<label>$INFO[VideoPlayer.TVShowTitle] ($LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode])</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font12</font>
+					<font>font30_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Title label</description>
-					<posx>210</posx>
-					<posy>285</posy>
+					<posx>200</posx>
+					<posy>265</posy>
 					<height>30</height>
 					<width>1000</width>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font13_title</font>
+					<font>font16</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Time Label</description>
-					<posx>210</posx>
-					<posy>310</posy>
-					<height>30</height>
+					<posx>200</posx>
+					<posy>300</posy>
+					<height>45</height>
 					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<label>$INFO[Player.Time]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font12</font>
+					<font>font30</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -1130,7 +1130,7 @@
 		<control type="label">
 			<description>Date label</description>
 			<posx>20r</posx>
-			<posy>50</posy>
+			<posy>45</posy>
 			<width>200</width>
 			<height>35</height>
 			<align>right</align>

@@ -2,17 +2,17 @@
 	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<coordinates>
-		<posx>460</posx>
-		<posy>640</posy>
+		<posx>360</posx>
+		<posy>620</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,0" end="-190,0" time="200" condition="Window.IsVisible(BusyDialog)">conditional</animation>
+			<animation effect="slide" start="0,0" end="-255,0" time="200" condition="Window.IsVisible(BusyDialog)">conditional</animation>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>400</width>
-				<height>70</height>
+				<width>500</width>
+				<height>90</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
 				<texture border="12">OverlayDialogBackground.png</texture>
 			</control>
@@ -20,18 +20,18 @@
 				<description>avatar</description>
 				<posx>20</posx>
 				<posy>10</posy>
-				<width>50</width>
-				<height>50</height>
+				<width>70</width>
+				<height>70</height>
 				<aspectratio>keep</aspectratio>
 				<texture>DefaultFile.png</texture>
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
-				<posx>75</posx>
+				<posx>95</posx>
 				<posy>15</posy>
-				<width>310</width>
-				<height>18</height>
-				<font>font12_title</font>
+				<width>390</width>
+				<height>32</height>
+				<font>font16_title</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -40,11 +40,11 @@
 			</control>
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
-				<posx>75</posx>
-				<posy>35</posy>
-				<width>310</width>
-				<height>20</height>
-				<font>font12_title</font>
+				<posx>95</posx>
+				<posy>45</posy>
+				<width>390</width>
+				<height>34</height>
+				<font>font16_title</font>
 				<textcolor>grey2</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -55,8 +55,8 @@
 				<description>avatar</description>
 				<posx>20</posx>
 				<posy>10</posy>
-				<width>50</width>
-				<height>50</height>
+				<width>70</width>
+				<height>70</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconInfo.png</texture>
@@ -65,8 +65,8 @@
 				<description>avatar</description>
 				<posx>20</posx>
 				<posy>10</posy>
-				<width>50</width>
-				<height>50</height>
+				<width>70</width>
+				<height>70</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconWarning.png</texture>
@@ -75,8 +75,8 @@
 				<description>avatar</description>
 				<posx>20</posx>
 				<posy>10</posy>
-				<width>50</width>
-				<height>50</height>
+				<width>70</width>
+				<height>70</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconError.png</texture>

@@ -8,12 +8,12 @@
 			<posy>0</posy>
 			<animation effect="slide" end="-500,0" time="200" condition="Window.IsVisible(133)">conditional</animation>
 			<animation effect="slide" end="0,-110" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
-			<control type="image">
+      <control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>520</width>
-				<height>80</height>
-				<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+				<height>100</height>
+				<texture flipy="true" border="20,20,20,20">InfoMessagePanel.png</texture>
 			</control>
 			<control type="label" id="30">
 				<description>Header Label</description>
@@ -21,7 +21,7 @@
 				<posy>5</posy>
 				<width>490</width>
 				<height>25</height>
-				<font>font12_title</font>
+				<font>font14_title</font>
 				<textcolor>selected</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -30,19 +30,19 @@
 			<control type="label" id="31">
 				<description>Title Label</description>
 				<posx>15</posx>
-				<posy>33</posy>
+				<posy>40</posy>
 				<width>490</width>
-				<height>20</height>
-				<font>font13</font>
+				<height>22</height>
+				<font>font16</font>
 				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="progress" id="32">
 				<description>progress control</description>
 				<posx>15</posx>
-				<posy>58</posy>
+				<posy>73</posy>
 				<width>490</width>
-				<height>12</height>
+				<height>17</height>
 			</control>
 		</control>
 	</controls>

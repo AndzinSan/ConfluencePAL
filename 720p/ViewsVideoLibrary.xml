@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(501)</visible>
 			<posx>60</posx>
 			<posy>80</posy>
-			<width>1160</width>
+			<width>850</width>
 			<height>460</height>
 			<onup>9000</onup>
 			<ondown>61</ondown>
@@ -15,7 +15,7 @@
 				<visible>!Container.Content(LiveTV)</visible>
 				<posx>-183</posx>
 				<posy>0</posy>
-				<width>1526</width>
+				<width>1003</width>
 				<height>390</height>
 				<onleft>501</onleft>
 				<onright>501</onright>
@@ -26,47 +26,47 @@
 				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
-				<preloaditems>4</preloaditems>
-				<itemlayout height="310" width="218">
+				<preloaditems>12</preloaditems>
+				<itemlayout height="265" width="170">
 					<control type="image">
 						<posx>2</posx>
 						<posy>40</posy>
-						<width>214</width>
-						<height>310</height>
+						<width>170</width>
+						<height>265</height>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="310" width="218">
+				<focusedlayout height="265" width="170">
 					<control type="image">
 						<posx>-2</posx>
 						<posy>36</posy>
-						<width>222</width>
-						<height>318</height>
+						<width>170</width>
+						<height>265</height>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
-						<animation reversible="false" effect="zoom" start="-2,36,222,318" end="-28,0,284,390" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="-2,36,222,318" start="-28,0,284,390" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="-2,36,170,265" end="-28,0,222,346" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,36,170,265" start="-28,0,222,346" time="200">unfocus</animation>
 					</control>
 					<control type="image">
 						<posx>6</posx>
 						<posy>44</posy>
-						<width>170</width>
+						<width>158</width>
 						<height>180</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>GlassOverlay.png</texture>
-						<animation reversible="false" effect="zoom" start="6,44,170,180" end="-24,4,240,250" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="6,44,170,180" start="-24,4,240,250" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="6,44,158,180" end="-24,4,188,250" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="6,44,158,180" start="-24,4,188,250" time="200">unfocus</animation>
 					</control>
 					<control type="image">
-						<posx>165</posx>
-						<posy>310</posy>
-						<width>65</width>
-						<height>65</height>
+						<posx>120</posx>
+						<posy>270</posy>
+						<width>45</width>
+						<height>45</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<animation type="focus">
@@ -81,9 +81,9 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>140</posx>
+				<posx>100</posx>
 				<posy>0</posy>
-				<width>880</width>
+				<width>610</width>
 				<height>25</height>
 				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -107,7 +107,7 @@
 				<texture>SideFade.png</texture>
 			</control>
 			<control type="image">
-				<posx>1094</posx>
+				<posx>754</posx>
 				<posy>120</posy>
 				<width>128</width>
 				<height>310</height>
@@ -117,9 +117,9 @@
 		<control type="group">
 			<visible>Control.IsVisible(501) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
 			<control type="label">
-				<posx>30</posx>
+				<posx>60</posx>
 				<posy>500</posy>
-				<width>1220</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font35_title</font>
 				<textcolor>blue</textcolor>
@@ -130,9 +130,9 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>540</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font30</font>
 				<textcolor>white</textcolor>
@@ -143,9 +143,9 @@
 				<label>$INFO[ListItem.Year]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>580</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>20</height>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -157,9 +157,9 @@
 			</control>
 			<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>610</posy>
-				<width>1280</width>
+				<width>820</width>
 				<align>center</align>
 				<itemgap>2</itemgap>
 				<orientation>horizontal</orientation>
@@ -173,9 +173,9 @@
 		<control type="group">
 			<visible>Control.IsVisible(501) + Container.Content(Seasons)</visible>
 			<control type="label">
-				<posx>30</posx>
+				<posx>60</posx>
 				<posy>500</posy>
-				<width>1220</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font35_title</font>
 				<textcolor>blue</textcolor>
@@ -185,9 +185,9 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>540</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font30</font>
 				<textcolor>white</textcolor>
@@ -197,9 +197,9 @@
 				<label>$INFO[ListItem.TVShowTitle]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>575</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -209,9 +209,9 @@
 				<label>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>605</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
@@ -224,9 +224,9 @@
 		<control type="group">
 			<visible>Control.IsVisible(501) + Container.Content(TVShows)</visible>
 			<control type="label">
-				<posx>30</posx>
+				<posx>60</posx>
 				<posy>500</posy>
-				<width>1220</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font28_title</font>
 				<textcolor>blue</textcolor>
@@ -236,9 +236,9 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>540</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font30</font>
 				<textcolor>white</textcolor>
@@ -248,9 +248,9 @@
 				<label>$INFO[ListItem.Genre]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>575</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -260,9 +260,9 @@
 				<label>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>60</posx>
 				<posy>605</posy>
-				<width>1280</width>
+				<width>820</width>
 				<height>35</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>

@@ -3,7 +3,7 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
-		<posx>315</posx>
+		<posx>125</posx>
 		<posy>260</posy>
 	</coordinates>
 	<controls>
@@ -39,20 +39,21 @@
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font13</font>
+			<font>font16_title</font>
 			<label>$INFO[ListItem.Label]</label>
 			<textcolor>white</textcolor>
 		</control>
 		<control type="label">
-			<posx>40</posx>
+			<posx>20</posx>
 			<posy>60</posy>
-			<width>570</width>
+			<width>610</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font12</font>
+			<font>font16</font>
 			<label>31060</label>
 			<textcolor>grey2</textcolor>
+			<scroll>true</scroll>
 		</control>
 		<control type="image">
 			<posx>50</posx>
@@ -70,7 +71,7 @@
 			<texture>scroll-right-focus.png</texture>
 			<visible>Container(450).HasNext</visible>
 		</control>
-		<control type="list" id="450">
+		<control type="list" id="450"><!-- 450 -->
 			<posx>85</posx>
 			<posy>105</posy>
 			<width>480</width>
@@ -106,10 +107,10 @@
 		</control>
 		<control type="label">
 			<posx>40</posx>
-			<posy>155</posy>
+			<posy>145</posy>
 			<width>570</width>
 			<height>22</height>
-			<font>font13_title</font>
+			<font>font16_title</font>
 			<align>center</align>
 			<info>Container(450).ListItem.Label</info>
 		</control>
