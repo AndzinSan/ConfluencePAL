@@ -49,7 +49,7 @@
 		<font>font40</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<scroll>false</scroll>
+		<scroll>true</scroll>
 		<align>left</align>
 		<aligny>center</aligny>
 	</include>

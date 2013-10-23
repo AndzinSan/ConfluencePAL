@@ -67,6 +67,17 @@
 				<label>$LOCALIZE[20342]</label>
 				<visible>SubString(Container.FolderPath,videodb://1/,left)|SubString(Container.FolderPath,library://video/movies/,left)</visible>
 			</control>
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>$INFO[Container.FolderName]</label>
+				<visible>SubString(Container.FolderPath,library://video/inprogressshows.xml,left)|SubString(Container.FolderPath,videodb://4/,left)|SubString(Container.FolderPath,videodb://5/,left)|SubString(Container.FolderPath,sources://video/,left)|SubString(Container.FolderPath,special://videoplaylists/,left)|SubString(Container.FolderPath,addons://sources/video/,left)</visible>
+			</control>
+			
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>$LOCALIZE[10025]</label>
+				<visible>IsEmpty(Container.FolderName)</visible>
+			</control>
 		</control>
 		<control type="group">
 			<posx>-350</posx>
