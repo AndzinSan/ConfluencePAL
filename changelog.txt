@@ -1,3 +1,13 @@
+[B]0.3.2[/B]
+- Added skin support for skin developers
+- Added support for Artwork Downloader addon
+- Fixed poster size in video information dialog
+
+[B]0.3.1[/B]
+- Finished WindowTitleCommons include for less and better info in all
+video sections in file MyVideoNav.xml
+(now displaying FolderName in all missed sections from v0.3)
+
 [B]0.3[/B]
 - Fixed some dialog sizes and font sizes in various windows
 - Fixed positions of elements while playing TV Shows

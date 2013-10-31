@@ -15,7 +15,7 @@
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
-				<posx>230</posx>
+				<posx>100</posx>
 				<posy>0</posy>
 				<width>64</width>
 				<height>32</height>
@@ -159,14 +159,14 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>220</width>
+						<width>210</width>
 						<height>310</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<posx>4</posx>
 						<posy>4</posy>
 						<width>200</width>
@@ -174,7 +174,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>GlassOverlay.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
-					</control>
+					</control>-->
 					<control type="list" id="49">
 						<posx>230</posx>
 						<posy>0</posy>
@@ -340,22 +340,22 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>220</width>
+						<width>210</width>
 						<height>310</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
 					</control>
-					<control type="image">
+					<!-- <control type="image">
 						<posx>4</posx>
 						<posy>4</posy>
 						<width>200</width>
 						<height>230</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<texture>GlassOverlay.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
-					</control>
+					</control>-->
 					<control type="list" id="49">
 						<posx>230</posx>
 						<posy>0</posy>
@@ -492,7 +492,7 @@
 						<bordersize>4</bordersize>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
-					<control type="image">
+					<!-- <control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>380</width>
@@ -501,7 +501,7 @@
 						<bordertexture border="5"  flipy="true" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
-					</control>
+					</control>-->
 					<control type="list" id="49">
 						<posx>230</posx>
 						<posy>0</posy>
@@ -971,6 +971,15 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>13511</label>
 					</control>
+					<control type="button" id="28">
+             <description>Get Artwork</description>
+             <label>Artwork</label>
+             <include>ButtonInfoDialogsCommonValues</include>
+             <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+             <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+             <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
+             <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]+system.hasaddon(script.artwork.downloader)</visible>
+          </control>
 					<control type="button" id="11">
 						<description>Play Trailer</description>
 						<include>ButtonInfoDialogsCommonValues</include>
